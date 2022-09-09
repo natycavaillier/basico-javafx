@@ -2,11 +2,29 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewController">
    <children>
-      <Button fx:id="btTest" layoutX="174.0" layoutY="138.0" mnemonicParsing="false" onAction="#onBtTestAction" text="Button" />
-      <Label layoutX="170.0" layoutY="99.0" text="Clique aqui" />
+      <Label layoutX="26.0" layoutY="47.0" text="Calcular a Soma">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumber1" layoutX="26.0" layoutY="111.0" promptText="Primeiro número" />
+      <TextField fx:id="txtNumber2" layoutX="26.0" layoutY="160.0" promptText="Segundo número" />
+      <Button fx:id="btSum" layoutX="26.0" layoutY="215.0" mnemonicParsing="false" onAction="#onBtSumAction" text="Soma" />
+      <Label layoutX="26.0" layoutY="259.0" text="Resultado = ">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelResult" layoutX="138.0" layoutY="259.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
