@@ -21,7 +21,7 @@
             <Font name="System Italic" size="18.0" />
          </font>
       </Label>
-      <Label fx:id="labelResult" layoutX="138.0" layoutY="259.0">
+      <Label fx:id="labelResult" layoutX="124.0" layoutY="259.0">
          <font>
             <Font size="18.0" />
          </font>
